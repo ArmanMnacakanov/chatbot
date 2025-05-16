@@ -81,6 +81,7 @@ function addMessage(text, className) {
   const chat = document.querySelector(".chat");
   const span = document.createElement("span");
   span.className = className;
+  span.className == 'botmessage' ? document.querySelector('.botmp3').play() : document.querySelector('.usermp3').play()
   span.textContent = text;
   chat.appendChild(span);
 }
