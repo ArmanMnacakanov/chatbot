@@ -57,8 +57,8 @@
   align-self: flex-start;
   max-width: 70%;
   padding: 10px;
+  border-radius: 10px;
   border-bottom-left-radius:0;
-  border-radius: 8px;
   background-color: #ddd;
   color: black;
   animation: showBot 0.4s ease forwards;
