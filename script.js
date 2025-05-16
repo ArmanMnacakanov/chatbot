@@ -80,3 +80,8 @@ function scrollToBottom() {
   const chat = document.querySelector(".chat");
   chat.scrollTop = chat.scrollHeight;
 }
+
+window.addEventListener('resize', () => {
+  // при изменении размеров (в том числе из-за клавиатуры)
+  scrollToBottom();
+});
