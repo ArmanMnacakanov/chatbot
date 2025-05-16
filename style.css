@@ -19,6 +19,7 @@
 @media (max-width: 552px) {
   .chat_box {
     width: 95%;
+     margin: 20px auto;
   }
 }
 .chat_box h1 {
