@@ -1,7 +1,11 @@
 let userName = ""; // "память" для имени
 
-document.getElementById("send_btn").addEventListener("click", handleMessage);
-
+const input = document.querySelector('input');
+input.addEventListener('focus', () => {
+  setTimeout(() => {
+    scrollToBottom();
+  }, 100); // Небольшая задержка помогает на мобильных
+});
 function handleMessage() {
   const input = document.getElementById("message");
   const text = input.value.trim();
