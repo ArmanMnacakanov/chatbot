@@ -46,7 +46,7 @@ function handleMessage() {
     }
 
     // Ответ на "кто я"
-    else if (lower.includes("Who am i")) {
+    else if (lower.includes("Who am I")) {
       reply = userName ? `You are ${userName}.` : "I don't know yet. What's your name?";
     }
 
