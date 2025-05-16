@@ -65,6 +65,9 @@ function handleMessage() {
     else if (lower.includes("I'm a developer")) {
       reply = "That's awesome! Keep coding! 💻";
     }
+    else if (lower.includes("Russian")) {
+      reply = "Отлично, продолжаем на русском!";
+    }
 
     // Стандартный ответ
     else {
