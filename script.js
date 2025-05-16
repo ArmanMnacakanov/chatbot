@@ -30,30 +30,30 @@ function handleMessage() {
     let reply = "";
 
     // Обработка имени
-    const nameMatch = lower.match(/my name is (.+)/i);
+    const nameMatch = lower.match(/My name is (.+)/i);
     if (nameMatch) {
       userName = nameMatch[1];
       reply = `Nice to meet you, ${userName}!`;
     }
 
     // Ответ на "кто я"
-    else if (lower.includes("who am i")) {
+    else if (lower.includes("Who am i")) {
       reply = userName ? `You are ${userName}.` : "I don't know yet. What's your name?";
     }
 
     // Приветствие
-    else if (/(hello|hi|hey)/.test(lower)) {
+    else if (/(Hello|Hi|Hey)/.test(lower)) {
       reply = "Hello! How can I help you?";
     }
 
     // Погода (заглушка)
-    else if (/weather in (.+)/.test(lower)) {
+    else if (/Weather in (.+)/.test(lower)) {
       const city = lower.match(/weather in (.+)/)[1];
       reply = `I can't check weather for ${city} yet, but maybe it's sunny! ☀️`;
     }
 
     // Разработчик
-    else if (lower.includes("i'm a developer")) {
+    else if (lower.includes("I'm a developer")) {
       reply = "That's awesome! Keep coding! 💻";
     }
 
