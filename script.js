@@ -1,18 +1,19 @@
 let userName = ""; // "память" для имени
 
-const input = document.querySelector('input');
-input.addEventListener('focus', () => {
-  setTimeout(() => {
-    scrollToBottom();
-  }, 100); // Небольшая задержка помогает на мобильных
-});
+
 document.getElementById("send_btn").addEventListener("click", handleMessage);
 function handleMessage() {
   const input = document.getElementById("message");
   const text = input.value.trim();
   const chat = document.querySelector(".chat");
   const help = document.querySelector(".help");
-
+  
+const input = document.querySelector('input');
+input.addEventListener('focus', () => {
+  setTimeout(() => {
+    scrollToBottom();
+  }, 100); // Небольшая задержка помогает на мобильных
+});
   if (!text) return;
   input.value = "";
 
