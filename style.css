@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+  height:100vh;
+}
 .botmp3,.usermp3{
     display: none;
 }
