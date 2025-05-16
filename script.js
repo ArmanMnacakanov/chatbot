@@ -6,6 +6,7 @@ input.addEventListener('focus', () => {
     scrollToBottom();
   }, 100); // Небольшая задержка помогает на мобильных
 });
+document.getElementById("send_btn").addEventListener("click", handleMessage);
 function handleMessage() {
   const input = document.getElementById("message");
   const text = input.value.trim();
