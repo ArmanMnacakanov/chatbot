@@ -99,6 +99,7 @@ html, body {
   border-radius: 30px;
   border: 2px solid gray;
   transition: 0.4s ease-in-out;
+  font-size:18px;
   outline: none;
 }
 .chat_box > div input:focus {
